@@ -73,6 +73,6 @@ function processCSV(filePath) {
     });
 }
 
-// Path to your CSV file
+// CSV file
 const csvFilePath = './data.csv';
 processCSV(csvFilePath);
