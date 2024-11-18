@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import fs from 'fs';
 import csv from 'csv-parser';
 
-// Load environment variables from .env file
+
 dotenv.config();
 
 const AUTH_TOKEN = process.env.AUTH_TOKEN;
@@ -47,7 +47,7 @@ function processCSV(filePath) {
   fs.createReadStream(filePath)
     .pipe(csv())
     .on('data', (row) => {
-      // Assume the CSV has columns: publisher, longitude, latitude
+    
       const data = {
         uid: UID,
         events: [
